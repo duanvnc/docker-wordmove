@@ -22,10 +22,11 @@ We ship 3 flavours of this container:
 * alpine
 * php5 (deprecated and unmaintained)
 
-`php7` and `php5` tags are based upon Debian stretch
-`alpine` tag is - really - based upon Alpine Linux 3.9
+> @since 28 November 2019 `latest` corresponds to `php7`
 
-`php5` also ships with:
+`php7` is based upon Debian Buster
+`alpine` tag is - really - based upon Alpine Linux 3.9
+`php5` is based upon Ubuntu 14.04
 
 * sshpass
 * ENV RUBYOPT="-KU -E utf-8:utf-8" (Fix for some mysql sync issues when using old
