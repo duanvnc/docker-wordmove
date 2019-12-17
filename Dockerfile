@@ -13,7 +13,7 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
       chmod +x wp-cli.phar && \
       mv wp-cli.phar /usr/local/bin/wp
 
-RUN gem install wordmove
+RUN gem install wordmove --version 5.0.2
 
 WORKDIR ${WORDMOVE_WORKDIR}
 CMD ["/bin/bash"]
