@@ -34,17 +34,17 @@ We ship 3 flavours of this container:
 * ENV RUBYOPT="-KU -E utf-8:utf-8" (Fix for some mysql sync issues when using old
   db adapter)
 
-## How to use
+## Usage
 
-### To run this image
+### Run this image
 
 `docker run -it --rm -v ~/.ssh:/root/.ssh:ro welaika/wordmove`
 
 This starts a shell, with `wordmove` available on the command-line.
 
-### SSH permission caveat
+### SSH permissions caveat
 
-If you are on a Winodws or Linux host, then you could get permission errors
+If you are on a Windows or Linux host, then you could get permission errors
 while trying to use your ssh keys. To work around this problem we've
 a trick for you:
 
