@@ -10,7 +10,8 @@ RUN chmod +x /bin/mount-ssh.sh
 
 RUN apk update && \
       apk add --no-cache openssh curl rsync mysql-client bash \
-                     php7-mysqli php7-phar php7-json php7-mbstring
+                     php7-mysqli php7-phar php7-json php7-mbstring \
+                     lftp
 
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
       chmod +x wp-cli.phar && \
