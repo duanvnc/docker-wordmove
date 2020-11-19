@@ -21,7 +21,9 @@ RUN apt-get update && apt-get install -y \
   php-cli \
   php-mysql \
   mariadb-client \
-  lftp
+  lftp \
+  php-simplexml \
+  php-curl
 
 RUN gem install wordmove --version 5.0.2
 RUN curl -o /usr/local/bin/wp -L https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
