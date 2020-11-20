@@ -9,7 +9,7 @@ LABEL maintainers.1="Simon Bland <simon.bland@bluewin.ch>"
 LABEL maintainers.2="Alessandro Fazzi <alessandro.fazzi@welaika.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV WORDMOVE_WORKDIR /html
+ENV WORDMOVE_WORKDIR /var/www/html
 
 COPY mount-ssh.sh /bin/mount-ssh.sh
 RUN chmod +x /bin/mount-ssh.sh
